@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nexusGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00C6FF" />
+      <stop offset="50%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <linearGradient id="orbitGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00C6FF" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background icon container -->
+  <rect width="500" height="500" rx="90" fill="#0B0F19" />
+  
+  <g transform="translate(45, 175)">
+    <!-- Letters N E -->
+    <path d="M 15 130 V 20 H 42 L 80 88 V 20 H 105 V 130 H 80 L 40 60 V 130 Z" fill="#F8FAFC" />
+    <path d="M 125 130 V 20 H 185 V 45 H 153 V 63 H 180 V 87 H 153 V 105 H 185 V 130 Z" fill="#F8FAFC" />
+    
+    <!-- Orbital Ring back layer -->
+    <ellipse cx="235" cy="75" rx="98" ry="34" transform="rotate(-26, 235, 75)" fill="none" stroke="url(#orbitGradient)" stroke-width="4.5" stroke-dasharray="260 20" opacity="0.95" />
+    
+    <!-- Stylized Central X -->
+    <!-- Diagonal stroke 1: top-left to bottom-right -->
+    <path d="M 188 20 H 222 L 278 130 H 244 Z" fill="url(#nexusGradient)" />
+    <!-- Diagonal stroke 2: bottom-left to top-right (sliced look) -->
+    <path d="M 194 130 H 228 L 284 20 H 250 Z" fill="url(#nexusGradient)" />
+    
+    <!-- Orbital Ring front layer & Nodal Dots -->
+    <circle cx="152" cy="116" r="8" fill="#00C6FF" filter="url(#glow)" />
+    <circle cx="318" cy="34" r="8" fill="#A855F7" filter="url(#glow)" />
+    
+    <!-- Letters U S -->
+    <path d="M 298 20 H 325 V 88 C 325 118, 332 130, 355 130 C 378 130, 385 118, 385 88 V 20 H 412 V 88 C 412 132, 395 152, 355 152 C 315 152, 298 132, 298 88 Z" transform="translate(0, -18)" fill="#F8FAFC" />
+    <path d="M 390 128 C 370 128, 356 120, 356 102 H 382 C 382 109, 388 112, 398 112 C 409 112, 415 107, 415 100 C 415 80, 357 88, 357 52 C 357 32, 372 20, 398 20 C 420 20, 436 29, 437 50 H 411 C 411 42, 405 38, 398 38 C 388 38, 382 43, 382 50 C 382 70, 440 61, 440 98 C 440 120, 422 128, 390 128 Z" transform="translate(18, 2)" fill="#F8FAFC" />
+  </g>
+</svg>

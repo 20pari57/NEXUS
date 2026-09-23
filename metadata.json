@@ -1,0 +1,6 @@
+{
+  "name": "NEXUS — Employee Interaction Intelligence",
+  "description": "Graph Neural Network-ready employee interaction intelligence platform for analyzing organizational communication networks, communities, anomalies, and interaction predictions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
